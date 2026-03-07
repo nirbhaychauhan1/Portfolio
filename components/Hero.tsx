@@ -83,7 +83,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-br from-accent-start/20 to-accent-end/10 blur-3xl" />
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ transform: 'translateZ(20px)' }}>
                 <Image
-                  src="/profile.png"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/profile.png`}
                   alt="Nirbhay Chauhan"
                   fill
                   className="object-cover object-top"
