@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nirbhay Chauhan | Java Backend Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f76c08',
+            'background-dark': '#0B0B0F',
+            'surface': '#1E1E1E',
+          },
+          fontFamily: { display: ['Manrope', 'sans-serif'] },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: 'Manrope', sans-serif; scroll-behavior: smooth; }
+    .orange-gradient-text {
+      background: linear-gradient(to right, #F97316, #FDBA74);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  </style>
+</head>
+<body class="bg-background-dark text-slate-100 min-h-screen antialiased">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-background-dark/90 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">N</div>
+      <div class="flex items-center gap-6 text-slate-400">
+        <a class="hover:text-primary transition-colors" href="#about">About</a>
+        <a class="hover:text-primary transition-colors" href="#skills">Skills</a>
+        <a class="hover:text-primary transition-colors" href="#projects">Projects</a>
+        <a class="hover:text-primary transition-colors" href="#experience">Experience</a>
+        <a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Intro -->
+  <section class="pt-28 pb-16 px-6 border-b border-white/5">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-slate-400 text-sm mb-1">Hello, My Name is</p>
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">Nirbhay Chauhan</h1>
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        Java Backend <span class="orange-gradient-text">Engineer</span>
+      </h2>
+      <p class="text-slate-400 max-w-xl text-lg leading-relaxed mb-8">
+        Specialized in building scalable microservices and enterprise-grade systems with Java 17, Spring Boot, and Kafka. Passionate about clean architecture and high-throughput systems.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">VIEW RESUME</a>
+        <a href="#contact" class="border border-white/30 hover:bg-white/5 text-white px-6 py-3 rounded-lg font-semibold transition-colors">GET IN TOUCH</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-black text-white text-center mb-12">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCchGOt2Kpo9xDJ9xFOWgjsbcptwkg-kFgLSiM8LLi5nQKKEhMMNnOooiO-J0PR9G8y-1CPWjGSTe6qMJrpRS6vGUum4qzI9Pc2Eu94bPw34OFOFvtzAA72K5wj8DgL1nkxpNgkVk5g3vO0KRv8grp1HXpqlh7FyAq3bfv2kcVSVMZXrhTwenzS7yN7wS6qdFs8YoXYMzylMit4CqboACD83fVtQ8DyAEHDGmCj0IAfSbhmPraTKCDTC9TZXg0HX16l95TqK2F3rj9v"
+          alt="Nirbhay Chauhan"
+          class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-xl grayscale"
+        />
+        <div class="flex-1 text-center md:text-left">
+          <h3 class="text-xl font-bold text-white mb-4">NIRBHAY K. SINGH</h3>
+          <p class="text-slate-400 leading-relaxed">
+            Passionate Java Backend Engineer with a focus on Java 17, Spring Boot, and microservices. I thrive on solving complex backend challenges and optimizing high-throughput systems. With a deep understanding of distributed systems, I specialize in building robust APIs, implementing event-driven architectures with Kafka, and ensuring seamless deployments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 px-6 bg-white/[0.02]">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-black text-white text-center mb-12">Skills</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass-card p-8 rounded-xl text-center">
+          <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="material-symbols-outlined text-primary text-2xl">code</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-4">Frontend</h3>
+          <div class="flex flex-wrap gap-2 justify-center text-slate-300 text-sm">
+            <span class="px-3 py-1.5 bg-white/5 rounded-full">HTML5</span>
+            <span class="px-3 py-1.5 bg-white/5 rounded-full">CSS3</span>
+            <span class="px-3 py-1.5 bg-white/5 rounded-full">JavaScript</span>
+            <span class="px-3 py-1.5 bg-white/5 rounded-full">React</span>
+          </div>
+        </div>
+        <div class="glass-card p-8 rounded-xl text-center">
+          <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="material-symbols-outlined text-primary text-2xl">storage</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-4">Backend</h3>
+          <div class="flex flex-wrap gap-2 justify-center text-slate-300 text-sm">
+            <span class="px-3 py-1.5 bg-white/5 rounded-full">JAVA</span>
+            <span class="px-3 py-1.5 bg-white/5 rounded-full">Node JS</span>
+            <span class="px-3 py-1.5 bg-white/5 rounded-full">Python</span>
+            <span class="px-3 py-1.5 bg-white/5 rounded-full">Spring</span>
+          </div>
+        </div>
+        <div class="glass-card p-8 rounded-xl text-center">
+          <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="material-symbols-outlined text-primary text-2xl">settings</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-4">DevOps</h3>
+          <div class="flex flex-wrap gap-2 justify-center text-slate-300 text-sm">
+            <span class="px-3 py-1.5 bg-white/5 rounded-full">AWS</span>
+            <span class="px-3 py-1.5 bg-white/5 rounded-full">Docker</span>
+            <span class="px-3 py-1.5 bg-white/5 rounded-full">Git</span>
+            <span class="px-3 py-1.5 bg-white/5 rounded-full">Kubernetes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Work -->
+  <section id="projects" class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-black text-white mb-4">Featured Work</h2>
+      <p class="text-slate-400 mb-6 max-w-2xl">A selection of projects showcasing backend architecture, microservices, and full-stack delivery.</p>
+      <a href="#" class="text-primary font-semibold inline-flex items-center gap-1 mb-10 hover:underline">View All Projects <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+      <div class="grid md:grid-cols-2 gap-8">
+        <article class="glass-card rounded-xl overflow-hidden group">
+          <div class="aspect-video overflow-hidden">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYH3zZvebjWaUk4gLhx0kce1j_jiHVPCbkbXjT8jaDQdGo9T_O1Eu62tuCBOXdjQQhQTZ6EDECkU9IsHw0cgj0lfQUbq4-xWYb1GJGSC3oZGNbOvQXE_N5I-9C7Ji2Xs_dQnLgq2zmcKo0bO5XPDbCY7kpwjyJc5el4p0WyFKarjU64TW-jH1IOnFTclcTAQrLT-HwQd8xP9H59iKISJHXA3pdBEvUtzZvyKQxVC35lz04S8-xRqgzQrMrg_Vz1w7GCt6d6vfOv82S"
+              alt="E-commerce App"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">E-commerce App</h3>
+            <p class="text-slate-400 text-sm mb-4">Full-stack e-commerce platform with microservices, real-time inventory, and payment integration.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 bg-white/5 rounded text-slate-400 text-xs">React</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-slate-400 text-xs">Java</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-slate-400 text-xs">Spring</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden group">
+          <div class="aspect-video overflow-hidden">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuMAhUOEZuQJzcFM-mddxSGxUG0lYfB1QrFM2ONf4UounI1RhMrpdDR4cY7sWUVA6pLBdqOzrpMgzdv4xqKHa8oJMkS99hmz3pG0jMJsqr4oDuDpPThXv0VCKD0-0JPYSkKWuQDMpzUc21Te25nFXKGbbQ644_1ym--hVdDxqSxytS7x2ahrJN6QfBO2BPq9WQtW9Sq0qBQqk9ndLObLyIQ7MDpvrqi4lUX9j5oFNHLs2YQe2uo3J4Z6huvO_nQ_Z_V5_D1omBO1QQ"
+              alt="E-Design vs. MCP MVP"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">E-Design vs. MCP MVP</h3>
+            <p class="text-slate-400 text-sm mb-4">Design-to-code workflow MVP connecting Figma and Cursor via MCP for component mapping and implementation.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 bg-white/5 rounded text-slate-400 text-xs">Figma</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-slate-400 text-xs">Code Connect</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-slate-400 text-xs">Cursor</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <article class="glass-card rounded-xl overflow-hidden group mt-8">
+        <div class="grid md:grid-cols-5 gap-0">
+          <div class="md:col-span-2 aspect-video md:aspect-auto overflow-hidden">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHw8L8ByNIHEFD3abPAoQ9MNKpiYc9P1_yv2Pv9dPkPPG3y1O_kgRKEG8S8mzwJzoFJd8EYMBKKWC4l6aDuaboXSfrFhipWpPMiuxL9hcNdFYVMGQtH1N7q9SiTYQnvta9Ysip4oXKVLpqvU2f6ffJDdrnvevuDAgh8eRGfDluLhueBuBBeXAw07SNwHvbqYgs2193iJsB8TO1xho3ssIcDiNuyLZ4JkuRUKDvlDjjIGnR4Rggmyh0qzGVIbzc1Z46hS-u_gPgHu8N"
+              alt="DataBeagle"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="md:col-span-3 p-6 flex flex-col justify-center">
+            <h3 class="text-xl font-bold text-white mb-2">DataBeagle</h3>
+            <p class="text-slate-400 text-sm mb-4">Advanced search and discovery engine utilizing Solr for indexing millions of enterprise records.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 bg-white/5 rounded text-slate-400 text-xs">Java</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-slate-400 text-xs">Solr</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-slate-400 text-xs">Kafka</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section id="experience" class="py-16 px-6 bg-white/[0.02]">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-black text-white text-center mb-12">Work Experience</h2>
+      <div class="relative border-l-2 border-primary/40 pl-8 space-y-10">
+        <div class="relative">
+          <span class="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-primary"></span>
+          <h3 class="text-xl font-bold text-white">Senior Backend Engineer</h3>
+          <p class="text-slate-400">Tech Solutions Inc.</p>
+          <p class="text-slate-500 text-sm mb-2">Jan 2022 - Present</p>
+          <p class="text-slate-400 text-sm leading-relaxed">Leading migration of legacy monoliths to microservices. Optimizing database performance and implementing Kafka for real-time streaming.</p>
+        </div>
+        <div class="relative">
+          <span class="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-primary"></span>
+          <h3 class="text-xl font-bold text-white">Software Engineer</h3>
+          <p class="text-slate-400">Global Innovations</p>
+          <p class="text-slate-500 text-sm mb-2">Aug 2019 - Dec 2021</p>
+          <p class="text-slate-400 text-sm leading-relaxed">Developed scalable web services and managed database schemas. Implemented OAuth2 and collaborated with frontend teams.</p>
+        </div>
+        <div class="relative">
+          <span class="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-primary"></span>
+          <h3 class="text-xl font-bold text-white">Junior Developer</h3>
+          <p class="text-slate-400">Innovate Corp</p>
+          <p class="text-slate-500 text-sm mb-2">Jun 2017 - Jul 2019</p>
+          <p class="text-slate-400 text-sm leading-relaxed">Contributed to REST APIs and internal tools. Learned Spring Boot and cloud deployment practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="py-16 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-black text-white text-center mb-12">Education</h2>
+      <div class="relative border-l-2 border-primary/40 pl-8 space-y-10">
+        <div class="relative">
+          <span class="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-primary"></span>
+          <h3 class="text-xl font-bold text-white">Master of Science in Computer Science</h3>
+          <p class="text-slate-400">State University</p>
+          <p class="text-slate-500 text-sm">Sept 2018 - May 2020</p>
+        </div>
+        <div class="relative">
+          <span class="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-primary"></span>
+          <h3 class="text-xl font-bold text-white">Bachelor of Technology in IT</h3>
+          <p class="text-slate-400">City Institute of Tech</p>
+          <p class="text-slate-500 text-sm">Aug 2014 - May 2018</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-6 border-t border-white/5">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-black text-white text-center mb-4">Let's build something epic</h2>
+      <p class="text-slate-400 text-center mb-10">Have a project in mind? Send me a message and I'll get back to you.</p>
+      <form class="glass-card p-8 rounded-2xl space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <input type="text" placeholder="Name" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-primary" />
+          <input type="email" placeholder="Email" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-primary" />
+        </div>
+        <input type="text" placeholder="Subject" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-primary" />
+        <textarea placeholder="Message" rows="5" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-primary resize-none"></textarea>
+        <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 rounded-lg transition-colors">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 border-t border-white/5 text-center">
+    <div class="max-w-6xl mx-auto">
+      <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold mx-auto mb-4">N</div>
+      <div class="flex justify-center gap-6 text-slate-400 mb-4">
+        <a href="#" class="hover:text-primary transition-colors" aria-label="LinkedIn"><span class="material-symbols-outlined">link</span></a>
+        <a href="#" class="hover:text-primary transition-colors" aria-label="GitHub"><span class="material-symbols-outlined">code</span></a>
+        <a href="#" class="hover:text-primary transition-colors" aria-label="Twitter"><span class="material-symbols-outlined">tag</span></a>
+      </div>
+      <p class="text-slate-500 text-sm">© 2026 Nirbhay Chauhan. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

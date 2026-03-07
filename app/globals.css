@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8f7f5;
+  --background-dark: #0B0B0F;
+  --accent-start: #F97316;
+  --accent-end: #FDBA74;
+}
+
+.dark {
+  --background: #0B0B0F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* Force dark background when .dark is on html (next-themes) */
+html.dark,
+html.dark body,
+html.dark main,
+html.dark section,
+html.dark footer,
+html.dark nav {
+  background-color: #0B0B0F !important;
+}
+
+/* Dark mode: force light text for headings and hero name (overrides any light-mode class) */
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark .hero-name {
+  color: #f8fafc !important;
+}
+/* Dark mode: Navbar "Nirbhay" logo text */
+html.dark .nav-brand {
+  color: #f8fafc !important;
+}
+/* Dark mode: Hero and About tech highlights (Java, PHP, Node.js, etc.) */
+html.dark .hero-tech,
+html.dark #home span.font-medium,
+html.dark #about span.font-medium {
+  color: #f8fafc !important;
+}
+/* Dark mode: buttons/links in hero that should stay light */
+html.dark #home .glass-card {
+  color: #f8fafc;
+}
+/* Dark mode: default text color for main content */
+html.dark main {
+  color: #e2e8f0;
+}
+html.dark main p,
+html.dark main li {
+  color: #cbd5e1;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent-start) 0%, var(--accent-end) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass card - light and dark */
+.glass-card {
+  @apply bg-slate-200/50 dark:bg-white/[0.03] border border-slate-300/60 dark:border-white/[0.06] backdrop-blur-sm;
+}
+
+/* 3D / perspective */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
