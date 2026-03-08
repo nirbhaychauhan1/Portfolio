@@ -5,8 +5,10 @@ import { motion } from 'framer-motion'
 const links = [
   { label: 'Email', value: 'cnirbhay62@gmail.com', href: 'mailto:cnirbhay62@gmail.com', icon: '✉' },
   { label: 'Phone', value: '+91-7668903337', href: 'tel:+917668903337', icon: '📞' },
-  { label: 'LinkedIn', value: 'Connect', href: 'https://www.linkedin.com/in/nirbhay5634', icon: 'in' },
-  { label: 'GitHub', value: 'Nirbhay5634', href: 'https://github.com/Nirbhay5634', icon: '⌘' },
+  { label: 'LinkedIn', value: 'Connect', href: 'https://www.linkedin.com/in/nirbhaychauhan1', icon: 'in' },
+  { label: 'GitHub', value: 'nirbhaychauhan1', href: 'https://github.com/nirbhaychauhan1', icon: '⌘' },
+  { label: 'Twitter', value: '@1nirbhaychauhan', href: 'https://twitter.com/1nirbhaychauhan', icon: '𝕏' },
+  { label: 'Instagram', value: 'nirbhay_chauhan1', href: 'https://www.instagram.com/nirbhay_chauhan1', icon: '📷' },
   { label: 'HackerRank', value: 'Profile', href: 'https://www.hackerrank.com/profile/_191500509', icon: 'HR' },
 ]
 

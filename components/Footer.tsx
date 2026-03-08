@@ -3,8 +3,10 @@
 import { motion } from 'framer-motion'
 
 const socialLinks = [
-  { href: 'https://www.linkedin.com/in/nirbhay5634', label: 'LinkedIn', icon: 'in' },
-  { href: 'https://github.com/Nirbhay5634', label: 'GitHub', icon: '⌘' },
+  { href: 'https://www.linkedin.com/in/nirbhaychauhan1', label: 'LinkedIn', icon: 'in' },
+  { href: 'https://github.com/nirbhaychauhan1', label: 'GitHub', icon: '⌘' },
+  { href: 'https://twitter.com/1nirbhaychauhan', label: 'Twitter', icon: '𝕏' },
+  { href: 'https://www.instagram.com/nirbhay_chauhan1', label: 'Instagram', icon: '📷' },
   { href: 'https://www.hackerrank.com/profile/_191500509', label: 'HackerRank', icon: 'HR' },
 ]
 
