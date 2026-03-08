@@ -45,6 +45,12 @@ jobs:
           BASE_PATH: ${{ steps.base.outputs.base_path }}
         run: npm run build
 
+      - name: Ensure Google verification file at site root
+        run: |
+          if [ -f public/googledf0c94a89cc9a93b.html ]; then
+            cp public/googledf0c94a89cc9a93b.html out/
+          fi
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
